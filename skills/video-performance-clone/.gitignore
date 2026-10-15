@@ -1,0 +1,5 @@
+__pycache__/
+*.pyc
+.venv/
+assets/library/*
+!assets/library/index.json

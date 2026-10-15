@@ -1,0 +1,4 @@
+interface:
+  display_name: "视频表演拆解与复刻"
+  short_description: "逐镜头还原人物动作、微表情和对白节奏，沉淀可复用的表演样本与生成提示词"
+  default_prompt: "使用 $video-performance-clone 拆解这个视频，核对人物动作、神情、镜头和对白语气，保存样本并输出复刻提示词。"

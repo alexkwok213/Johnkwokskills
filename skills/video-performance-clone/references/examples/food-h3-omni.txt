@@ -1,0 +1,24 @@
+subject_definitions:
+<Subject 1> is the woman in <Picture 1>; her identity, hair and clothing come only from that image.
+<Subject 2> is the plate of mala chicken in <Picture 2>, providing the food category, shape, sauce color and plate appearance.
+<Picture 1> is the opening composition anchor for [Shot 1], showing <Subject 1> holding the plate in the kitchen.
+<Video 1> provides the static framing and broad eating-action progression, not the identity of its performer.
+
+summary:
+[keyframe completion + reference generation] Generate a live-action food-tasting video beginning from <Picture 1>. <Subject 1> handles and eats one piece from <Subject 2> in a continuous shot, using <Video 1> for the framing and broad movement rhythm.
+
+retention_analysis:
+<Subject 1> (appears in [Shot 1]): fully_preserved - retain her identity, hair and clothing, with new natural eating movements.
+<Subject 2> (appears in [Shot 1]): fully_preserved - retain the defined food and plate appearance while the individual piece changes naturally as it is eaten.
+<Picture 1> ([Shot 1] opening anchor): fully_preserved - use its opening composition, subject placement and kitchen layout.
+<Video 1> (framing and action rhythm): weak_reference - reuse the static framing and broad action progression, allowing natural variation within each action.
+
+detailed_description:
+The target video has a realistic food-tasting style with soft, bright lighting and a gently blurred kitchen background.
+[Shot 1] Begin from <Picture 1>, with <Subject 1>, the woman whose identity and clothing follow that image, holding <Subject 2>, the shallow plate of red-brown, oil-glossed mala chicken. Maintain the fixed upper-body medium close-up and single continuous take suggested by <Video 1>. First, she looks at the plate and casually lifts one elongated chicken piece toward her mouth. Next, she brings that same piece to her mouth three times, with chewing and brief pauses between the contacts; the final contact is shorter. Her hand, head, lips and gaze cooperate naturally, and she occasionally looks at the remaining food. Finally, she lowers her gaze toward the plate and returns her eating hand, ready to select another piece. Preserve her identity and the defined product appearance without transferring the reference performer's face or unrelated props. Allow small expressions, blinking, wrist positions and pauses to arise naturally. The entire target video is silent and contains no text or subtitles.
+
+overall_soundscape:
+N/A
+
+non_diegetic_music:
+N/A

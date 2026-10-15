@@ -65,12 +65,13 @@
 
 [技能源码](skills/video-performance-clone/SKILL.md) · [下载 ZIP 技能包](packages/video-performance-clone.zip)
 
-读取参考视频，拆解人物动作、神情、镜头和对白节奏，默认输出适用于 Seedance 2.5 的中文生成提示词。完整提示词直接出现在回复中，并保存为 `prompt.txt`。
+读取参考视频，拆解人物动作、神情、镜头和对白节奏。复刻前先确认 Seedance 2.5、Seedance 2.0 或 MiniMax H3，以及仅首帧图或全能参考；完整提示词直接出现在回复中，并保存为 `prompt.txt`。
 
 - 保留关键动作、情绪转折和连续性，让细微表情、眨眼与手部姿态自然发挥。
 - 区分画面观察、声音测量与推测，不把自然姿态写成刻意动作。
 - 配套带时间戳的抽帧、切镜候选、音轨和能量分析工具；样本可保存后再次调用。
-- [吃播生成提示词示例](skills/video-performance-clone/references/examples/food-prompt.txt)。仓库与 ZIP 不含个人原视频、抽帧或本机样本库。
+- 生成正文默认使用第一阶段、第二阶段或真实镜头序号，核验用的秒数留在拆解报告里。
+- [三模型 × 两输入方式：六份完整示例](skills/video-performance-clone/references/examples.md)。仓库与 ZIP 不含个人原视频、抽帧或本机样本库。
 
 ### 安装与使用
 
@@ -80,7 +81,15 @@
 
 或下载 ZIP，将其中的 `video-performance-clone` 文件夹放入助手的技能目录。然后附上视频并说：
 
-> 使用 $video-performance-clone 拆解这个视频，保留关键动作，细微表演自然发挥，给我一条可直接粘贴到 Seedance 2.5 的完整提示词。
+> 使用 $video-performance-clone 拆解这个视频。复刻前先问我要用哪个模型，以及仅首帧还是全能参考；保留关键动作，细微表演自然发挥，按先后顺序给我可直接使用的提示词。
+
+| 模型 | 仅首帧 | 全能参考 |
+|---|---|---|
+| Seedance 2.5 | 中文阶段顺序，继承首帧 | 中文素材职责与阶段顺序 |
+| Seedance 2.0 | 中文镜头/动作顺序 | 中文素材绑定与顺序，不依赖精确秒点 |
+| MiniMax H3 | I2VA首帧绑定＋三字段 | Ref2VA素材定义＋六字段 |
+
+单镜头中的第一、第二阶段不会被写成切镜。H3格式保留必要的开场绑定，动作正文按先后顺序展开；首帧与全参考的实际模式限制见[输入方式说明](skills/video-performance-clone/references/input-modes.md)。
 
 本地抽帧需要 Python、Pillow、FFmpeg 和 ffprobe。可在自己的虚拟环境中安装本技能的 `requirements.txt`，然后运行：
 

@@ -4,6 +4,8 @@
 
 报告包含：元信息与实际用到的能力；角色/空间锚点；镜头表；逐台词表演表；声音已核验与未核验项；写实效果；用户意图与成片偏差；可迁移规则；提示词；未确认项。
 
+报告与证据使用源时间戳，生成正文默认使用阶段/镜头顺序。`prompt.md` 在代码块外写清本次模型、首帧或全能参考方式、真实素材的职责及生成时长设置。仅首帧不虚构其他参考；全能参考不承诺文字指定的开场图等同于严格首帧参数锁定。用户要求模型对比时，各套输出独立完整，不要求拼接。
+
 表演表：时间范围、镜头、角色、原台词/触发词、动作、神情/视线、声音、对方反应、证据及置信度。没有证据填未核验，不填正常。
 
 `sample.json` 至少含：
@@ -15,6 +17,13 @@
   "tags": ["写实", "对话", "争吵"],
   "source": {"original_path": "/绝对路径.mp4", "sha256": "完整哈希"},
   "analysis_basis": {"visual": "连续帧", "audio": "ASR候选，未听辨"},
+  "generation_target": {
+    "model": "Seedance 2.5",
+    "input_mode": "first_frame",
+    "sequence_style": "ordered_phases",
+    "confirmed_by": "本次用户明确选择",
+    "references": [{"file": "本次真实首帧文件", "label": "图片1", "roles": ["opening", "identity", "scene"]}]
+  },
   "characters": [],
   "shots": [{"id": "S1", "start": 0, "end": 2.1, "description": "观察"}],
   "events": [{

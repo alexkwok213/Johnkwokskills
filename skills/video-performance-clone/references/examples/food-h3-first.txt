@@ -1,0 +1,7 @@
+For the target video, at 0.00 seconds into the target video, <Picture 1> (from [Shot 1]) is fully referenced.
+
+integrated_multimodal_description: [Shot 1] Live-action food tasting, continuing from the woman, clothing, plate of mala chicken, kitchen, lighting and composition established in <Picture 1>. The camera holds a static upper-body medium close-up in one continuous take. First, she looks at the plate and casually lifts one elongated piece of chicken toward her mouth. Next, she brings the same piece to her mouth three times, with natural chewing, brief pauses and glances at what remains between the contacts. The last contact is shorter than the earlier ones. Her head, hand, lips and gaze coordinate naturally without exaggerated performance. Finally, she lowers her gaze and returns her eating hand toward the plate, ready to pick up another piece. Keep her identity, clothing and props continuous while the food changes naturally as she eats. Allow small expressions, blinking, wrist positions and pauses to develop freely. The target video is completely silent, with no on-screen text or subtitles.
+
+overall_soundscape: N/A
+
+non_diegetic_music: N/A

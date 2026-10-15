@@ -1,0 +1,6 @@
+interface:
+  display_name: "大欢公众号写作"
+  short_description: "从真实事件和读者需要出发，写面向AI入门与OPC人群的公众号长文"
+  default_prompt: "请使用 $dahuan-writer，沿用已确认的大欢写作方式，把这些材料写成主线清楚、普通读者能懂的公众号文章，并检查实操、重点排版和发布准备。"
+policy:
+  allow_implicit_invocation: true

@@ -1,0 +1,6 @@
+interface:
+  display_name: "大欢公众号封面"
+  short_description: "从文章提炼AI封面，同时兼顾2.35:1横版与中央1:1裁切"
+  default_prompt: "请使用 $dahuan-cover，根据这篇文章生成公众号封面，让2.35:1横版与中央1:1裁切都保留标题和完整核心画面，并检查实际尺寸、文字和缩略图可读性。"
+policy:
+  allow_implicit_invocation: true

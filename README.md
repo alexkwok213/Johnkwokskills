@@ -35,6 +35,27 @@
 - [改稿纠错示例](skills/dahuan-writer/references/revision-examples.md)
 - [公众号复制代码](skills/dahuan-writer/assets/wechat-copy.js)
 
+## 大欢公众号封面
+
+[技能源码](skills/dahuan-cover/SKILL.md) · [下载 ZIP 技能包](packages/dahuan-cover.zip)
+
+根据文章提炼短文案和核心画面，用 AI 生成同图适配 2.35:1 横版与中央 1:1 裁切的公众号封面。
+
+- 先设计中央方形，再向两侧扩展；标题和完整核心主体都留在安全区内。
+- 配套本次真实使用的生成提示词，以及“目标尺寸不等于实际输出尺寸”的检查经验。
+- 检查中文、缩略图可读性、真实像素尺寸与两种裁切，保存原图及最终提示词。
+- 可独立使用，也能接在大欢公众号写作定稿之后。
+
+把下面这句话发给支持技能安装的 AI 编程助手：
+
+> 安装 https://github.com/alexkwok213/Johnkwokskills/tree/main/skills/dahuan-cover 这个技能，告诉我怎么用。
+
+安装后附上文章并说：
+
+> 请使用 $dahuan-cover，根据这篇文章生成封面，让 2.35:1 横版和中央 1:1 裁切都保留完整标题与核心画面。
+
+技能需要所用助手具备图像生成能力，优先使用内置 image_gen；仅安装技能不会自行提供图像生成服务。
+
 ## 小红书改写
 
 [小红书改写技能](skills/xiaohongshu-rewriter/SKILL.md)

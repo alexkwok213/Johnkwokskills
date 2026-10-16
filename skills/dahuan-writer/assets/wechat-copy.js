@@ -12,7 +12,7 @@
     copy.querySelectorAll('p').forEach(el => {
       const caption = el.classList.contains('caption');
       el.setAttribute('style', caption
-        ? 'text-align:left;font-size:13px;line-height:1.7;margin:0 0 24px;color:#888888;'
+        ? 'text-align:center;font-size:13px;line-height:1.7;margin:0 0 24px;color:#888888;'
         : 'text-align:left;font-size:17px;line-height:1.8;margin:0 0 24px;color:#333333;');
     });
     copy.querySelectorAll('strong,b').forEach(el => {

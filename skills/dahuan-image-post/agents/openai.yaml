@@ -1,0 +1,4 @@
+interface:
+  display_name: "大欢公众号贴图"
+  short_description: "把同一选题改成以图片为主的3:4滑动图解，交付整套图片和短正文"
+  default_prompt: "请使用 $dahuan-image-post，把这篇定稿与核实资料改成3:4贴图版，突出逐页价值、清晰配图和必要说明，交付可上传图片、整套预览、压缩包与短正文。"

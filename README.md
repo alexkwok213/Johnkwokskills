@@ -1,60 +1,61 @@
 # Johnkwokskills
 
-个人 AI 技能集合。
+把 AI 内容创作中反复要交代的方法，整理成可以安装的技能。这里包含公众号写作、封面、贴图，以及视频表演拆解与提示词等做法。
 
-## 大欢公众号写作
+## 大欢公众号：同一选题，交付长文和贴图两版
 
-[技能源码](skills/dahuan-writer/SKILL.md) · [下载 ZIP 技能包](packages/dahuan-writer.zip)
+提供选题、链接、视频或已有素材，让 AI 帮你查资料、选角度、组织案例，再分别写成适合阅读的长文和适合滑动浏览的贴图。面向 AI 入门及关注 OPC 的读者，重点是讲清楚有什么用、怎样开始。
 
-面向 AI 入门及关注 OPC 的读者，从真实事件、具体需求和可见成果展开，用通俗解释连接实际使用与生意机会。
+[下载三技能整包](packages/dahuan-publishing-suite.zip) · [安装与使用](#安装与使用) · [写作技能介绍](docs/dahuan-writer.md)
 
-- 用吸睛事件切入，让案例沿同一条主线推进，工具在读者需要时出现。
-- 实操展示实际给 AI 的话、过程、用时与成果；资料核验保存在后台。
-- 重点选择性加粗，关键总结和结尾共鸣句加粗标红。
-- 配套公众号富文本复制代码，以及 2.35:1 横版、中央 1:1 裁切的封面设计指导。
+下面是一次 WorkBuddy 科普稿制作出的 **10 张贴图示例**。张数按内容决定，不固定凑十张。
+
+![WorkBuddy 贴图版实际成品预览](docs/assets/dahuan-image-post-preview.png)
 
 ### 安装与使用
 
-可以把下面这句话发给支持技能安装的 AI 编程助手：
+推荐安装整套，因为完整写作流程会调用配套的封面和贴图技能。
 
-> 安装 https://github.com/alexkwok213/Johnkwokskills/tree/main/skills/dahuan-writer 这个技能，告诉我怎么用。
+1. 下载上面的 ZIP，解压得到 `dahuan-writer`、`dahuan-cover`、`dahuan-image-post` 三个文件夹。
+2. 将三个文件夹放入你使用的 AI 助手的技能目录。Codex 的个人技能目录通常是 `~/.codex/skills/`；以实际配置为准。
+3. 在新的对话轮次中提供素材，并提出需求，例如：
 
-也可以下载 ZIP，解压后将 `dahuan-writer` 文件夹放到所用助手的技能目录。Codex 的个人技能目录为 `~/.codex/skills/`。
+> 使用 $dahuan-writer，把这些材料做成一篇 AI 新功能科普。先查资料和案例，说明适合谁、能做什么、怎样开始，交付公众号长文和 3:4 贴图两版。
 
-安装后可这样提出需求：
+也可以把下面这句话发给支持从 GitHub 安装技能的助手：
 
-> 请使用 $dahuan-writer，把这些材料写成面向 AI 入门和 OPC 读者的公众号文章。先确定主线，再直接讲事件，用真实实操支撑判断，并检查重点排版和发布准备。
+> 请从 https://github.com/alexkwok213/Johnkwokskills 安装 skills/dahuan-writer、skills/dahuan-cover 和 skills/dahuan-image-post，告诉我怎么开始使用。
 
-本技能允许按相关写稿上下文自动调用；明确指定的新读者、文体和交付要求优先。
+### 三个技能怎样配合
 
-### 配套文件
+| 技能 | 帮你完成什么 | 介绍与源码 | 单独下载 |
+|---|---|---|---|
+| `dahuan-writer` | 研究命题、选角度和案例，组织长文，统筹两版交付 | [介绍](docs/dahuan-writer.md) · [源码](skills/dahuan-writer/SKILL.md) | [ZIP](packages/dahuan-writer.zip) |
+| `dahuan-cover` | 提炼封面短句与画面，用 AI 生成横版封面并检查中央方形裁切 | [介绍](docs/dahuan-cover.md) · [源码](skills/dahuan-cover/SKILL.md) | [ZIP](packages/dahuan-cover.zip) |
+| `dahuan-image-post` | 把同一选题改成以图片为主的逐页图解，导出上传图片与短正文 | [介绍](docs/dahuan-image-post.md) · [源码](skills/dahuan-image-post/SKILL.md) | [ZIP](packages/dahuan-image-post.zip) |
 
-- [认可的写作方式](skills/dahuan-writer/references/accepted-workflow.md)
-- [发布排版与双裁切封面](skills/dahuan-writer/references/publication.md)
-- [与卡兹克原文的比较](skills/dahuan-writer/references/khazix-comparison.md)
-- [改稿纠错示例](skills/dahuan-writer/references/revision-examples.md)
-- [公众号复制代码](skills/dahuan-writer/assets/wechat-copy.js)
+长文讲清来龙去脉与判断，贴图突出每页的用途、结果和步骤。两版共用资料与事实，分别组织表达；明确只要某一版或局部修改时，按这次要求执行。
 
-## 大欢公众号封面
+### 能拿到什么
 
-[技能源码](skills/dahuan-cover/SKILL.md) · [下载 ZIP 技能包](packages/dahuan-cover.zip)
+- **长文版**：正文、配图、可复制的公众号富文本预览，以及横版封面。
+- **贴图版**：默认 1080×1440、3:4 的编号图片、整套预览、图片压缩包，以及标题与短正文。
+- **封面**：默认按 2.35:1 横版和同图中央 1:1 裁切设计，交付实际生成图、提示词及尺寸说明。
 
-根据文章提炼短文案和核心画面，用 AI 生成同图适配 2.35:1 横版与中央 1:1 裁切的公众号封面。
+下面这张封面的实际尺寸为 **1922×818，约 2.35:1**，已在本地查看横版与中央方形裁切。
 
-- 先设计中央方形，再向两侧扩展；标题和完整核心主体都留在安全区内。
-- 配套本次真实使用的生成提示词，以及“目标尺寸不等于实际输出尺寸”的检查经验。
-- 检查中文、缩略图可读性、真实像素尺寸与两种裁切，保存原图及最终提示词。
-- 可独立使用，也能接在大欢公众号写作定稿之后。
+![WorkBuddy 公众号封面实际成品](docs/assets/dahuan-cover-example.png)
 
-把下面这句话发给支持技能安装的 AI 编程助手：
+### 使用前需要什么
 
-> 安装 https://github.com/alexkwok213/Johnkwokskills/tree/main/skills/dahuan-cover 这个技能，告诉我怎么用。
+技能是给 AI 助手读取的工作方法，需要在支持技能的助手中使用。研究、网页查看、图像生成和图片导出，分别依赖助手实际具备的工具。
 
-安装后附上文章并说：
+- 新命题需要可靠资料；有真实实操时用实操，没有合适实操时可用核实过的功能或案例，不编造亲历。
+- AI 封面需要图像生成能力；仅安装技能不会额外提供生成服务。文字密集的贴图可以用 HTML/CSS 等方式排版。
+- 公众号后台粘贴、上传及手机显示仍要实际检查。本地预览通过不等于平台已验收。
+- 发布、发送或改动外部账号，按当前用户的明确指示执行。
 
-> 请使用 $dahuan-cover，根据这篇文章生成封面，让 2.35:1 横版和中央 1:1 裁切都保留完整标题与核心画面。
-
-技能需要所用助手具备图像生成能力，优先使用内置 image_gen；仅安装技能不会自行提供图像生成服务。
+更多写作方法见[从命题到文章](skills/dahuan-writer/references/topic-to-article.md)、[发布排版](skills/dahuan-writer/references/publication.md)和[与卡兹克原文的比较](skills/dahuan-writer/references/khazix-comparison.md)。
 
 ## 小红书改写
 
@@ -98,3 +99,7 @@ python scripts/extract_evidence.py /path/to/video.mp4 --out /path/to/empty-evide
 ```
 
 可用 `--start`、`--end` 和 `--fps` 抽取局部动作。图像、声音理解和转写由所用助手及其可用工具完成；抽帧脚本不会独立判断人物情绪，也不会调用付费视频生成服务。
+
+## 许可证
+
+本仓库目前未提供统一许可证。

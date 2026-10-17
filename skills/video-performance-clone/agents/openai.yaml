@@ -1,4 +1,4 @@
 interface:
   display_name: "视频表演拆解与复刻"
-  short_description: "拆解人物表演，确认模型与首帧或全能参考，输出三种模型适配的可用提示词"
-  default_prompt: "使用 $video-performance-clone 拆解这个视频，先确认我要用 Seedance 2.5、Seedance 2.0 还是 MiniMax H3，以及首帧或全能参考，再用先后顺序给出可直接生成的提示词。"
+  short_description: "拆解真实表演，确认素材方式，输出适配Seedance、H3或可灵4.0的完整提示词"
+  default_prompt: "使用 $video-performance-clone 拆解这个视频，先确认我要用 Seedance 2.5、Seedance 2.0、MiniMax H3 还是可灵4.0，以及首帧或全能参考，再保留关键神情与动作因果，用先后顺序给出可直接生成的提示词。"

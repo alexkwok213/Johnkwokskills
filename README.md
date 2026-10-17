@@ -66,13 +66,14 @@
 
 [技能源码](skills/video-performance-clone/SKILL.md) · [下载 ZIP 技能包](packages/video-performance-clone.zip)
 
-读取参考视频，拆解人物动作、神情、镜头和对白节奏。复刻前先确认 Seedance 2.5、Seedance 2.0 或 MiniMax H3，以及仅首帧图或全能参考；完整提示词直接出现在回复中，并保存为 `prompt.txt`。
+读取参考视频，拆解人物动作、神情、镜头和对白节奏。复刻前先确认 Seedance 2.5、Seedance 2.0、MiniMax H3 或可灵4.0，以及仅首帧图或全能参考；完整提示词直接出现在回复中，并保存为 `prompt.txt`。
 
 - 将关键情绪转折写成可见的神情、视线、听者反应与重心变化，保留动作接触和连续性；非关键眨眼、小姿态与停顿自然发挥。
 - 区分画面观察、声音测量与推测，不把自然姿态写成刻意动作。
 - 配套带时间戳的抽帧、切镜候选、音轨和能量分析工具；样本可保存后再次调用。
 - 生成正文默认使用第一阶段、第二阶段或真实镜头序号，核验用的秒数留在拆解报告里。
-- [三模型 × 两输入方式：六份完整示例](skills/video-performance-clone/references/examples.md)。仓库与 ZIP 不含个人原视频、抽帧或本机样本库。
+- [四模型 × 两输入方式：八份完整示例](skills/video-performance-clone/references/examples.md)。仓库与 ZIP 不含个人原视频、抽帧或本机样本库。
+- [可灵4.0适配](skills/video-performance-clone/references/kling40.md)区分关键帧、全能参考与视频编辑，保留表演细节，注明正式版/Flash、素材额度和声音引用的差异。
 
 ### 安装与使用
 
@@ -89,6 +90,7 @@
 | Seedance 2.5 | 中文阶段顺序，继承首帧 | 中文素材职责与阶段顺序 |
 | Seedance 2.0 | 中文镜头/动作顺序 | 中文素材绑定与顺序，不依赖精确秒点 |
 | MiniMax H3 | I2VA首帧绑定＋三字段 | Ref2VA素材定义＋六字段 |
+| 可灵4.0 | 关键帧入口，中文后续动作与表演 | 中文素材职责、连续事件与引号内台词 |
 
 单镜头中的第一、第二阶段不会被写成切镜。H3格式保留必要的开场绑定，动作正文按先后顺序展开；首帧与全参考的实际模式限制见[输入方式说明](skills/video-performance-clone/references/input-modes.md)。
 

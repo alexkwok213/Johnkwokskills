@@ -1,4 +1,4 @@
-# 三模型 × 两参考方式：完整示例
+# 四模型 × 两参考方式：完整示例
 
 这些是格式演示，不是对用户新视频的预设。实际复刻先问本次模型与素材方式，再按真实画面改写。
 
@@ -15,7 +15,10 @@
 | Seedance 2.5 | [完整提示词](examples/food-prompt.txt) | [完整提示词](examples/food-seedance25-omni.txt) |
 | Seedance 2.0 | [完整提示词](examples/food-seedance20-first.txt) | [完整提示词](examples/food-seedance20-omni.txt) |
 | MiniMax H3 | [I2VA三字段](examples/food-h3-first.txt) | [Ref2VA六字段](examples/food-h3-omni.txt) |
+| 可灵4.0 | [关键帧入口，仅首帧](examples/food-kling40-first.txt) | [全能参考素材职责](examples/food-kling40-omni.txt) |
 
 Seedance两版均可用阶段/镜头顺序，并非一定要制造文风差异。模型适配的重点是素材角色、时序能力与输入模式，不只是改一个模型名字。H3按专用标签和字段组织；用户最终只需要复制其已确认模型和输入前提对应的一整条。
+
+可灵4.0两版用中文自然语言和真实`@`素材标签，保留关键表演、重心与手口接触。仅首帧示例只用一张关键帧图；全参考示例使用本页已声明的图片1、图片2及视频1，不能将该组合放入只接图片的关键帧入口。完全静音是本示例的用户要求，不是可灵默认静音。
 
 全参考中的开场图用于画面锚定，不应把文字要求称为严格首帧参数保证；所用产品入口是否支持相应模式另行核对。这里没有实际调用模型生成对照片。

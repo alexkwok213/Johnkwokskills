@@ -1,0 +1,6 @@
+interface:
+  display_name: "大欢创作套件"
+  short_description: "按当前产物选择写作、视频、封面或贴图，并接续已有项目"
+  default_prompt: "请使用 $dahuan，读取本选题已有材料与认可稿，只完成我当前要求的产物，沿用已经确认的选择。"
+policy:
+  allow_implicit_invocation: true

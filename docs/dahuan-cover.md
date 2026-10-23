@@ -2,7 +2,7 @@
 
 从文章已经成立的钩子和结果提炼短文案，用 AI 生成公众号封面，让完整横版和同图中央方形都能看清标题与核心画面。
 
-[下载 ZIP](../packages/dahuan-cover.zip) · [技能源码](../skills/dahuan-cover/SKILL.md) · [三技能整包](../packages/dahuan-publishing-suite.zip)
+[下载 ZIP](../packages/dahuan-cover.zip) · [技能源码](../skills/dahuan-cover/SKILL.md) · [套件整包](../packages/dahuan-suite.zip)
 
 ![WorkBuddy 文章封面成品](assets/dahuan-cover-example.png)
 
@@ -10,7 +10,7 @@
 
 ## 安装与使用
 
-下载单包，将 `dahuan-cover` 放入助手技能目录，也可安装完整的大欢三技能套件。提供文章定稿、准确文案或参考图，例如：
+下载单包，将 `dahuan-cover` 放入助手技能目录，也可安装完整的大欢创作套件。提供文章定稿、准确文案或参考图，例如：
 
 > 使用 $dahuan-cover，为这篇文章生成封面，横版和中央方形都保留完整标题与核心画面。
 

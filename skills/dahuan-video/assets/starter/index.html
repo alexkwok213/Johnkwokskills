@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="zh-CN">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>大欢技术样片 · 非真实案例</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#13212d;color:#fff;font-family:Arial,"PingFang SC",sans-serif;overflow:hidden}
+main{height:100vh;padding:10vh 9vw;display:flex;flex-direction:column;justify-content:space-between}
+.label{font-size:3.8vw;color:#a9c6da}h1{font-size:10vw;line-height:1.3;margin:0}p{font-size:5vw;line-height:1.6}
+#dot{width:22vw;height:22vw;border-radius:50%;background:#ffcb72;will-change:transform}
+footer{font-size:3.5vw;color:#a9c6da}.track{height:1vw;background:#365063;margin-top:3vh}#progress{height:100%;background:#ffcb72;transform-origin:left}
+</style>
+<main>
+<div class="label">大欢 · 渲染技术样片</div>
+<div><h1>让画面<br>跟着时间走</h1><p>无外部素材，验证逐帧渲染。</p></div>
+<div id="dot"></div>
+<footer>非真实案例 · 无配音 · 非成片验收<div class="track"><div id="progress"></div></div></footer>
+</main>
+<script>
+window.TL = {dur: 2};
+// Each frame is determined only by t. For real media, set currentTime here;
+// return a Promise when loading custom resources (canvas textures, etc.).
+window.render = function(t) {
+  const progress = Math.max(0, Math.min(1, t / TL.dur));
+  document.querySelector('#dot').style.transform = `translateX(${progress * 55}vw)`;
+  document.querySelector('#progress').style.transform = `scaleX(${progress})`;
+};
+render(0);
+</script>
+</html>

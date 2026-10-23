@@ -1,0 +1,6 @@
+interface:
+  display_name: "大欢视频号成片"
+  short_description: "把已确认口播做成视频号竖屏成片：真实素材、解释动画、配音、配乐与字幕"
+  default_prompt: "请使用 $dahuan-video，读取本项目已认可的口播与素材，按题材选择合适风格完成成片；只改局部时只改相应部分，交付前完整回看和试听，并说明未验证项。"
+policy:
+  allow_implicit_invocation: true

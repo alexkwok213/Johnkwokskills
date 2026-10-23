@@ -2,13 +2,13 @@
 
 让读者滑过一组图片，就能知道一个功能有什么用、能得到什么结果，以及怎样开始。把同一篇定稿重新组织成图解，默认每张 1080×1440、3:4。
 
-[下载 ZIP](../packages/dahuan-image-post.zip) · [技能源码](../skills/dahuan-image-post/SKILL.md) · [三技能整包](../packages/dahuan-publishing-suite.zip)
+[下载 ZIP](../packages/dahuan-image-post.zip) · [技能源码](../skills/dahuan-image-post/SKILL.md) · [套件整包](../packages/dahuan-suite.zip)
 
 ![实际制作的 WorkBuddy 贴图示例](assets/dahuan-image-post-preview.png)
 
 ## 怎样开始
 
-本技能沿用大欢写作的文字与事实原则，建议通过三技能整包安装。将其中的技能文件夹放入助手的技能目录，再提供定稿或足够的核实材料。
+本技能沿用大欢写作的文字与事实原则，建议通过套件整包安装。将其中的技能文件夹放入助手的技能目录，再提供定稿或足够的核实材料。
 
 > 使用 $dahuan-image-post，把这篇定稿做成 3:4 贴图，每页一个重点，突出实际结果，配上必要说明，交付图片和短正文。
 

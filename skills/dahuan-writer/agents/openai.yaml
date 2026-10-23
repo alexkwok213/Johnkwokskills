@@ -1,6 +1,6 @@
 interface:
-  display_name: "大欢公众号写作"
-  short_description: "研究命题、比较角度、选择案例，默认交付AI与OPC公众号长文和贴图两版"
-  default_prompt: "请使用 $dahuan-writer，按读者目标研究命题、比较角度和选择可靠案例，完整稿默认交付主线清楚的长文及3:4贴图两版，共用事实并分别组织表达；已经明确的标题、角度和局部修改直接执行。"
+  display_name: "大欢内容写作"
+  short_description: "面向普通人写公众号推文与视频号文案，共用选材判断，分别组织阅读与视听表达"
+  default_prompt: "请使用 $dahuan-writer，按当前载体写公众号推文或视频号文案，共用普通人视角、可靠材料与商业判断，分别组织阅读和视听表达，仅交付当前阶段要求的内容，已确认的选择继续沿用。"
 policy:
   allow_implicit_invocation: true

@@ -1,6 +1,6 @@
 ---
 name: dahuan-writer
-description: 为大欢或大欢聊OPC策划、撰写和修改公众号文章与视频号口播。用户要选题、研究、写稿、改标题或口播文案时使用；成片制作由 dahuan-video 负责，普通技术文档不默认使用。
+description: 为大欢或大欢AI工坊策划、撰写和修改公众号文章与视频号口播。用户要选题、研究、写稿、改标题或口播文案时使用；成片制作由 dahuan-video 负责，普通技术文档不默认使用。
 ---
 
 # 大欢写作
@@ -18,7 +18,7 @@ description: 为大欢或大欢聊OPC策划、撰写和修改公众号文章与�
 
 同题复用研究与事实，分别重组表达。不要把长文机械删短当口播，不把口播逐句扩长当文章。
 
-写作或重构全文时按需读 [写作与改稿判断](references/writing-craft.md)；AI商业案例读 [选材与商业判断](references/ai-business-cases.md)。只改一句不要加载全部参考。
+动笔前先按 [风格与技巧](references/styles.md) 定本期风格；用户反馈像是在换风格时先确认。写作或重构全文时按需读 [写作与改稿判断](references/writing-craft.md)；AI商业案例读 [选材与商业判断](references/ai-business-cases.md)。只改一句不要加载全部参考。
 
 ## 从材料到交付
 

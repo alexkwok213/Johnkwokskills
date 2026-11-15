@@ -2,7 +2,7 @@
 
 独立承接视频号全流程：从「思路主题对齐 → 口播脚本撰写与改稿」到「`1080×1920` 竖屏成片制作、音效混音、质感检查与 `1080×1440` 封面归档」。真实原片提供证据，解释动画讲清事实，配音、配乐和大字字幕按实际语音时间轴严格对齐。
 
-[下载 ZIP](../packages/dahuan-video.zip) · [技能源码](../skills/dahuan-video/SKILL.md) · [套件整包](../packages/dahuan-suite.zip) · [返回套件说明](dahuan.md)
+[下载 ZIP](../packages/dahuan-video.zip) · [技能源码](../skills/dahuan-video/SKILL.md) · [套件整包](../packages/dahuan-suite.zip) · [返回仓库首页](../README.md)
 
 ## 适合什么任务
 
@@ -10,7 +10,7 @@
 - 已有定稿口播做成片：把确认的口播与一组真实原片做成 `1080×1920` 竖屏成片与配套 `1080×1440`（兼容 4:3）封面。
 - 局部修订视频：只调整字幕、配乐、某段画面或气口停顿，沿用既定版式与文字认可结果。
 
-写公众号长文用 `dahuan-article`；做 3:4 贴图用 `dahuan-image-post`；只分析参考视频表演与写生视频提示词，用独立的 `video-performance-clone`。
+写公众号长文与 2.35:1 双裁切封面用 `dahuan-article`；做 3:4 公众号贴图用 `dahuan-image-post`。
 
 ## 内置资料与工程工具
 

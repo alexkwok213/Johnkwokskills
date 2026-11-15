@@ -2,7 +2,7 @@
 
 面向公众号长文推文的一站式独立技能：把一手素材或选题整理成读者愿意点开并读完的长文，生成可直接粘贴进公众号编辑器的微信内联 HTML 预览（支持 Base64 JPG/GIF 图片与原生 SVG SMIL 循环动效），并制作同时兼容 `2.35:1` 横版与中央 `1:1` 方形的封面图。
 
-[下载 ZIP](../packages/dahuan-article.zip) · [技能源码](../skills/dahuan-article/SKILL.md) · [套件整包](../packages/dahuan-suite.zip) · [返回套件说明](dahuan.md)
+[下载 ZIP](../packages/dahuan-article.zip) · [技能源码](../skills/dahuan-article/SKILL.md) · [套件整包](../packages/dahuan-suite.zip) · [返回仓库首页](../README.md)
 
 ![WorkBuddy 公众号双裁切封面成品](assets/dahuan-cover-example.png)
 
@@ -26,5 +26,5 @@
 
 ## 使用条件
 
-- 独立文件夹 `dahuan-article` 解压后放入技能目录即可运行，无需再安装旧版 `dahuan`、`dahuan-writer` 或 `dahuan-cover`。
+- 独立文件夹 `dahuan-article` 解压后放入技能目录即可单独运行，无需额外安装总入口或其他子包。
 - 生成双裁切封面需助手接入图像生成工具；粘贴进公众号草稿箱需在当前已登录微信公众平台后台内操作或由用户手动粘贴。未真实在后台保存回读草稿前，仅报告本地预览与剪贴板检查状态。

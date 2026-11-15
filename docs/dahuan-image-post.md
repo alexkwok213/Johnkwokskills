@@ -2,7 +2,7 @@
 
 让读者滑过一组卡片图片，就能看清一个功能有什么用、能做出什么结果、怎样动手开始。将同一选题定稿或核实材料重组成图解卡片，默认每张 `1080×1440`、`3:4` 竖版比例。
 
-[下载 ZIP](../packages/dahuan-image-post.zip) · [技能源码](../skills/dahuan-image-post/SKILL.md) · [套件整包](../packages/dahuan-suite.zip) · [返回套件说明](dahuan.md)
+[下载 ZIP](../packages/dahuan-image-post.zip) · [技能源码](../skills/dahuan-image-post/SKILL.md) · [套件整包](../packages/dahuan-suite.zip) · [返回仓库首页](../README.md)
 
 ![实际制作的 WorkBuddy 贴图示例](assets/dahuan-image-post-preview.png)
 

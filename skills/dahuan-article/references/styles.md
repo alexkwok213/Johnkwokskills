@@ -31,7 +31,7 @@
 |---|---|---|---|
 | 半佛仙人 | 拆利益链、懂行的人看漏洞、教人避坑、口语自黑 | [banfo-xianren.md](banfo-xianren.md) | 待原文校准，目前来自第三方分析和访谈 |
 | 卡兹克 | 具体动作、私人判断、亲自下场、坦承局限、回环呼应 | [khazix-comparison.md](khazix-comparison.md)，khazix-writer | 对照过一篇原文 |
-| 鹤老师 | 锁定预期、连环悬疑、信息密度（技巧，任何风格可借） | [he-laoshi-short-video.md](he-laoshi-short-video.md) | 课程文字 |
+| 鹤老师 | 锁定预期、连环悬疑、信息密度（技巧，任何风格可借） | `dahuan-video` 短视频叙事 | 课程文字 |
 | 孙学白描 | 克制、短句、数字代替形容词、物件承载情感、留白 | 本机 sun-style-writing | 外部技能，未对照 |
 | 逸蒙 | 具体人、具体产品、具体金额的案例速递 | 暂无单独文件 | 未建档 |
 

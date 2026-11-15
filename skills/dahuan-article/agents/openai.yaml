@@ -1,0 +1,6 @@
+interface:
+  display_name: "大欢公众号推文"
+  short_description: "公众号推文选题、写作、微信内联HTML一键排版与2.35:1/1:1双裁切封面"
+  default_prompt: "请使用 $dahuan-article，读取本选题已有材料与认可稿，完成公众号推文写作/改稿、微信内联 HTML 一键排版（Base64 JPG/GIF 与原生 SVG SMIL 动效）或 2.35:1/1:1 双裁切封面，仅交付当前阶段要求的内容，如实区分本地检查与公众号后台状态。"
+policy:
+  allow_implicit_invocation: true

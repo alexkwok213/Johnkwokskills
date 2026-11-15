@@ -1,72 +1,43 @@
 # Johnkwokskills
 
-把 AI 内容创作中反复要交代的方法，整理成可以安装的技能。这里包含公众号与视频号创作、成片、封面、贴图、小红书改写，以及视频表演拆解与提示词等做法。
+自用的内容创作与多模态视频技能集合：按目标载体拆分、每项技能自带完整规则与参考示例，解压即可单独或成套安装使用。
 
-## 大欢创作套件：文章、口播、成片、封面、贴图
+## 大欢内容创作套件（dahuan-suite）
 
-提供选题、链接、视频或已有素材，让 AI 帮你选角度、组织素材，写成公众号文章或视频号口播；需要时再做成竖屏成片、公众号封面和 3:4 贴图。面向 AI 入门及关注 OPC 的读者，重点是讲清楚有什么用、怎样开始。
+围绕大欢及「大欢AI工坊」的真实商业案例与工具科普工作流，按发布载体**彻底拆分为三大平行自包含技能**：推文长文（`dahuan-article`）、3:4 贴图（`dahuan-image-post`）、视频号创作与成片（`dahuan-video`）。
 
-[下载套件整包](packages/dahuan-suite.zip) · [套件介绍](docs/dahuan.md) · [安装与使用](#安装与使用)
-
-下面是一次 WorkBuddy 科普稿制作出的 **10 张贴图示例**。张数按内容决定，不固定凑十张。
+[下载套件整包](packages/dahuan-suite.zip) · [套件说明](docs/dahuan.md) · [安装与使用](#安装与使用)
 
 ![WorkBuddy 贴图版实际成品预览](docs/assets/dahuan-image-post-preview.png)
 
-### 五个技能怎样配合
+### 三个平行技能
 
-| 技能 | 帮你完成什么 | 介绍与源码 | 单独下载 |
+| 技能 | 定位与交付内容 | 文档与源码 | 单包下载 |
 |---|---|---|---|
-| `dahuan` | 统一入口：判断这次要什么产物，读取项目已有进度，交给对应技能；存放共同原则与项目记录方法 | [介绍](docs/dahuan.md) · [源码](skills/dahuan/SKILL.md) | 已含在各单包中 |
-| `dahuan-writer` | 研究命题、选角度和案例，写公众号文章或视频号口播 | [介绍](docs/dahuan-writer.md) · [源码](skills/dahuan-writer/SKILL.md) | [ZIP](packages/dahuan-writer.zip) |
-| `dahuan-video` | 已确认口播做成竖屏成片：原片、解释动画、配音、配乐、字幕与检查 | [介绍](docs/dahuan-video.md) · [源码](skills/dahuan-video/SKILL.md) | [ZIP](packages/dahuan-video.zip) |
-| `dahuan-cover` | 提炼封面短句与画面，用 AI 生成横版封面并检查中央方形裁切 | [介绍](docs/dahuan-cover.md) · [源码](skills/dahuan-cover/SKILL.md) | [ZIP](packages/dahuan-cover.zip) |
-| `dahuan-image-post` | 把同一选题改成以图片为主的逐页图解，导出上传图片与短正文 | [介绍](docs/dahuan-image-post.md) · [源码](skills/dahuan-image-post/SKILL.md) | [ZIP](packages/dahuan-image-post.zip) |
+| `dahuan-article` | 公众号推文：选题、20 字强反差标题、去 AI 味长文、微信内联 HTML 一键排版（Base64 JPG/GIF 与原生循环 SVG 动效）、2.35:1/1:1 双裁切封面 | [介绍](docs/dahuan-article.md) · [源码](skills/dahuan-article/SKILL.md) | [ZIP](packages/dahuan-article.zip) |
+| `dahuan-image-post` | 公众号贴图：将同一选题重组为 `1080×1440` 3:4 滑动图解卡片，HTML/CSS 渲染导出、手机可读性检查与短正文 | [介绍](docs/dahuan-image-post.md) · [源码](skills/dahuan-image-post/SKILL.md) | [ZIP](packages/dahuan-image-post.zip) |
+| `dahuan-video` | 视频号全流程：思路四要素对齐、泥潭战友口吻口播撰写/改稿，以及 `1080×1920` 竖屏成片制作（原片、MG、配音、配乐、大字黄金三段字幕、120ms 气口与封面） | [介绍](docs/dahuan-video.md) · [源码](skills/dahuan-video/SKILL.md) | [ZIP](packages/dahuan-video.zip) |
 
-每个专用技能都可以直接调用；没指定时由 `dahuan` 选择。只要文案就停在文案，只改字幕就只改字幕；明确授权从材料做到成片时，按顺序做完。项目里记录给谁看、哪些事实已核实、哪版被认可、做到哪一步，换聊天或换模型也能接着做。
-
-一次被认可的黑金商业案例成片做法，保存为 [原片＋MG 制作方案](skills/dahuan-video/references/recipes/original-footage-mg.md)：保留具体参数，但不强加给所有题材。
+一次被认可的黑金商业案例成片做法保存在 [原片＋MG 制作方案](skills/dahuan-video/references/recipes/original-footage-mg.md)，2026-11 实战进一步收敛为「黄金三段式纯净视觉与大字层级」，供按题材选用。
 
 ### 安装与使用
 
-推荐安装整套。
-
-1. 下载上面的 ZIP，解压得到 `dahuan`、`dahuan-writer`、`dahuan-video`、`dahuan-cover`、`dahuan-image-post` 五个文件夹。
-2. 放入你使用的 AI 助手的技能目录。Codex 的个人技能目录通常是 `~/.codex/skills/`；以实际配置为准。
-3. 在新的对话轮次中提供素材，并提出需求，例如：
-
-> 使用 $dahuan，把这个 AI 商业案例写成视频号口播，先给我看文案；我确认后再做成片。
-
-> 使用 $dahuan-writer，把这些材料做成一篇 AI 新功能科普，交付公众号长文和 3:4 贴图两版。
-
-也可以把下面这句话发给支持从 GitHub 安装技能的助手：
-
-> 请从 https://github.com/alexkwok213/Johnkwokskills 安装 skills/dahuan、skills/dahuan-writer、skills/dahuan-video、skills/dahuan-cover 和 skills/dahuan-image-post，告诉我怎么开始使用。
-
-单独下载的 `dahuan-*` 包里已附带 `dahuan` 文件夹（共同原则在里面），两者放在同一个技能目录即可。原来的 [三技能整包](packages/dahuan-publishing-suite.zip) 链接仍可用，现在内容与套件整包相同。
-
-### 能拿到什么
-
-- **文章**：正文、配图、可复制的公众号富文本预览；需要时加横版封面和贴图版。
-- **口播**：标题与完整口播，素材/分镜建议另列，不混进配音正文。
-- **成片**：1080×1920 竖屏成片、可编辑工程和制作记录，注明哪些已回看、哪些已试听。
-- **贴图**：默认 1080×1440、3:4 的编号图片、整套预览、图片压缩包，以及标题与短正文。
-- **封面**：默认按 2.35:1 横版和同图中央 1:1 裁切设计，交付实际生成图、提示词及尺寸说明。
-
-下面这张封面的实际尺寸为 **1922×818，约 2.35:1**，已在本地查看横版与中央方形裁切。
+1. 下载 [dahuan-suite.zip](packages/dahuan-suite.zip) 解压获得 `dahuan-article`、`dahuan-image-post`、`dahuan-video` 三个完整独立目录，复制到助手技能目录（如 `~/.agents/skills/` 或 `~/.codex/skills/`）。
+2. 如仅需其中一项载体能力，单独下载对应单包 ZIP 解压即可运行，**不依赖额外总入口文件夹**。原来的 [兼容性套件链接](packages/dahuan-publishing-suite.zip) 内容与 `dahuan-suite.zip` 完全一致。
 
 ![WorkBuddy 公众号封面实际成品](docs/assets/dahuan-cover-example.png)
 
-### 使用前需要什么
+> 使用 $dahuan-article，围绕这篇材料写出 20 字内强反差标题与公众号长文，生成带 Base64 图片和循环 SVG 动效的一键复制 HTML 预览，并制作双裁切封面。
 
-技能是给 AI 助手读取的工作方法，需要在支持技能的助手中使用。研究、网页查看、图像生成、配音、视频渲染和图片导出，分别依赖助手实际具备的工具。
+> 使用 $dahuan-image-post，把这篇定稿改成一组 3:4（1080×1440）公众号贴图卡片，检查手机宽度清晰度，交付图片包与短正文。
 
-- 新命题需要可靠资料；有真实实操时用实操，没有合适实操时可用核实过的功能或案例，不编造亲历。
-- AI 封面需要图像生成能力；配音需要你自己的剪映或已配置的 TTS。仅安装技能不会额外提供这些服务。
-- 成片渲染需要 Python、Playwright/Chromium 和 ffmpeg，见 [渲染入口](skills/dahuan-video/references/rendering.md)。技能不含作者的原始视频、音色或账号。
-- 公众号后台粘贴、上传及手机显示仍要实际检查。本地预览通过不等于平台已验收；技术检测通过也不等于成片被认可。
-- 发布、发送或改动外部账号，按当前用户的明确指示执行。
+> 使用 $dahuan-video，先对齐核心角度和前 3 秒钩子写出视频号口播稿，我确认后按黄金三段字幕与真实原片完成 1080×1920 竖屏成片。
 
-更多写作方法见[从命题到文章](skills/dahuan-writer/references/topic-to-article.md)、[发布排版](skills/dahuan-writer/references/publication.md)和[与卡兹克原文的比较](skills/dahuan-writer/references/khazix-comparison.md)。
+### 运行条件
+
+- 写作与图文整理无外部付费依赖；公众号双裁切封面需助手支持图像生成，贴图导出需要可用的浏览器截图环境；
+- 成片逐帧渲染需要 Python 3.10+、Playwright/Chromium 和带 `libx264` 的 `ffmpeg`，详见 [渲染入口](skills/dahuan-video/references/rendering.md)。技能不含作者私人素材、音色与平台账号。
+- 更多方法与实战复盘见 [从命题到文章](skills/dahuan-article/references/topic-to-article.md)、[发布排版规范](skills/dahuan-article/references/publication.md) 与 [口播叙事法则](skills/dahuan-video/references/spoken.md)。
 
 ## 小红书改写
 

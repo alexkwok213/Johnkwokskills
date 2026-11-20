@@ -32,6 +32,14 @@ Johnkwokskills/
 | `dahuan-image-post` | 公众号 3:4 贴图 | 将同一选题重组为 `1080×1440` 多图卡片、HTML/CSS 高清代码渲染与对比图表导出、手机宽度可读性检查、整套预览＋图片包＋短正文 | [docs/dahuan-image-post.md](docs/dahuan-image-post.md) · [SKILL.md](skills/dahuan-image-post/SKILL.md) | [ZIP](packages/dahuan-image-post.zip) |
 | `dahuan-video` | 视频号创作与成片 | 动笔前四要素对齐、泥潭战友口吻口播撰写与改稿、`1080×1920` 竖屏成片制作（原片＋MG、黄金三段式大字字幕、120ms 气口、混音质检与 `1080×1440` 封面归档） | [docs/dahuan-video.md](docs/dahuan-video.md) · [SKILL.md](skills/dahuan-video/SKILL.md) | [ZIP](packages/dahuan-video.zip) |
 
+## MG 动画创作搭档
+
+`mg-video-director` 帮你从一个点子出发，比较创意方向、找风格案例、写时间轴分镜，并用 Remotion 在本地制作样片或成片。
+
+[查看技能](skills/mg-video-director/SKILL.md) · [下载独立 ZIP](packages/mg-video-director.zip)
+
+> 用 $mg-video-director 和我一起构思一条 25 秒的 MG 解说，先比较三个方向，再写出最推荐方向的开场分镜。
+
 ## 设计亮点与共同准则
 
 - **完全独立自包含**：每个技能目录内置各自的 `principles-and-red-lines.md`、`project-records.md`、`incremental-production.md` 与经验库 `lessons.md`，单独安装任意一个都能直接工作。

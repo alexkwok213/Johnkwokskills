@@ -1,0 +1,4 @@
+interface:
+  display_name: "MG 动画创作搭档"
+  short_description: "从一个点子出发，构思 MG 动画、查找风格模板、编写可制作的分镜并制作样片。"
+  default_prompt: "用 $mg-video-director 和我一起把这个 idea 做成 MG 动画，先给我几种视觉方向和开头分镜。"

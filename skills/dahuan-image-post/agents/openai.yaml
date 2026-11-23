@@ -1,6 +1,0 @@
-interface:
-  display_name: "大欢公众号贴图"
-  short_description: "3:4（1080×1440）公众号贴图卡片排版、真实截图重组与短正文交付"
-  default_prompt: "请使用 $dahuan-image-post，基于本选题已核实素材或定稿制作 3:4（1080×1440）贴图卡片组，突出逐页可读性与清晰配图，完成手机宽度自查后交付上传图片、预览页、压缩包与短正文。"
-policy:
-  allow_implicit_invocation: true

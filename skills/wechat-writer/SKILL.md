@@ -1,9 +1,9 @@
 ---
-name: wechat-writing-styles
+name: wechat-writer
 description: 用中文撰写或改写微信公众号文章。默认用大欢的写作风格，也可应要求借鉴半佛仙人的商业观察与避坑写法。适用于商业观察、案例速递和观点拆解。
 ---
 
-# 中文公众号写作风格
+# 公众号写手
 
 1. 读取 [大欢的写作风格](references/dahuan.md)。根据选题和读者要带走的信息，选择商业观察、案例速递或观点拆解。
 2. 用户指定半佛仙人时，再读 [半佛仙人](references/banfo-xianren.md)，把拆利益关系、讲清机制或给出避坑动作的手法用到文章里。
